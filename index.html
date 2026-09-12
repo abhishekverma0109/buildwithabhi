@@ -240,6 +240,46 @@ footer{border-top:1px solid var(--line);padding:28px 0}
   transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ============================ RESPONSIVE / MOBILE ============================ */
+h1,h2,h3,p,.co-name,.exp-title,.tagline{overflow-wrap:break-word}
+@media(max-width:640px){
+  .nav-in{padding:14px 18px;gap:12px}
+  .toggle{padding:9px;margin:-5px -9px -5px 0}          /* larger tap target */
+  .hero{padding:38px 0 44px}
+  .hero-grid{gap:34px}
+  .hero .eyebrow{font-size:10.5px;letter-spacing:.1em;margin-bottom:18px}
+  .hero .tagline{margin-bottom:22px}
+  .hero-btns{gap:10px}
+  .hero-btns .btn{flex:1 1 44%;justify-content:center}
+  .portrait{max-width:320px}
+  section.block{padding:54px 0}
+  .sec-top{margin-bottom:34px}
+  .sec-ic{width:42px;height:42px;margin-bottom:14px}
+  .exp-card{padding:18px;gap:14px}
+  .exp-title{font-size:1.05rem}
+  .exp-desc{font-size:14.5px}
+  .co-card{padding:20px}
+  .co-head{padding-right:56px}
+  .co-stage{top:16px;right:16px}
+  .build-card{padding:22px}
+  .about-photo{max-width:340px;margin:0 auto}
+  .detail{margin-top:28px}
+  .contact{padding:74px 0}
+  .contact-btns{flex-direction:column;align-items:stretch}
+  .contact-btns .btn{justify-content:center}
+  .foot-in{justify-content:center;text-align:center;gap:6px}
+}
+@media(max-width:380px){
+  .hero h1{font-size:2.5rem;letter-spacing:-.02em}
+  .hero .eyebrow{font-size:9.5px;letter-spacing:.07em}
+  .brand{font-size:14px}
+  .brand .mk{width:18px;height:18px}
+  .exp-card{padding:16px;gap:12px}
+  .logo{width:42px;height:42px}
+  .co-card{padding:18px}
+  .chip{font-size:11px;padding:7px 11px}
+}
 </style>
 </head>
 <body>
