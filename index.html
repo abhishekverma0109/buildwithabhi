@@ -140,6 +140,8 @@ section.block{padding-top:clamp(64px,9vw,104px);padding-bottom:clamp(64px,9vw,10
 .logo--dark img{padding:7px}
 .logo--green{background:#2b3e1e;border-color:#2b3e1e}
 .logo--green img{padding:7px}
+a.logo{cursor:pointer;transition:transform .2s,box-shadow .25s}
+a.logo:hover{transform:translateY(-2px);box-shadow:0 6px 16px -8px rgba(0,0,0,.6)}
 
 /* ---------- EXPERIENCE ---------- */
 .exp-list{display:flex;flex-direction:column;gap:14px}
@@ -346,21 +348,21 @@ h1,h2,h3,p,.co-name,.exp-title,.tagline{overflow-wrap:break-word}
     </div>
 
     <div class="exp-list">
-      <a class="exp-card current reveal" href="https://netcore.ai/" target="_blank" rel="noopener">
+      <div class="exp-card current reveal">
         <div class="exp-body">
           <p class="exp-title">Chief of Staff at Netcore <span class="badge">Current</span></p>
           <p class="exp-desc">Set the operating rhythm, own the annual plan, and build the AI tools the office runs on.</p>
         </div>
-        <span class="logo"><img src="netcore-logo.png" alt="Netcore"></span>
-      </a>
+        <a class="logo" href="https://netcore.ai/" target="_blank" rel="noopener" aria-label="Netcore website"><img src="netcore-logo.png" alt="Netcore"></a>
+      </div>
 
-      <a class="exp-card reveal" href="https://www.incredgroup.com/" target="_blank" rel="noopener">
+      <div class="exp-card reveal">
         <div class="exp-body">
-          <p class="exp-title">Senior Manager, CEO's Office at InCred Group</p>
+          <p class="exp-title">CEO's Office at InCred Group</p>
           <p class="exp-desc">Launched Unlisted Shares and Fixed Deposits; built to around ₹300cr AUM.</p>
         </div>
-        <span class="logo"><img src="incred-logo.png" alt="InCred"></span>
-      </a>
+        <a class="logo" href="https://www.incredgroup.com/" target="_blank" rel="noopener" aria-label="InCred Group website"><img src="incred-logo.png" alt="InCred"></a>
+      </div>
 
       <div class="exp-card reveal">
         <div class="exp-body">
@@ -370,13 +372,13 @@ h1,h2,h3,p,.co-name,.exp-title,.tagline{overflow-wrap:break-word}
         <span class="logo"><img src="console-logo.svg" alt="Console"></span>
       </div>
 
-      <a class="exp-card reveal" href="https://rukamcapital.com/" target="_blank" rel="noopener">
+      <div class="exp-card reveal">
         <div class="exp-body">
-          <p class="exp-title">Investor at Rukam Capital</p>
+          <p class="exp-title">Investment Associate at Rukam Capital</p>
           <p class="exp-desc">Five consumer investments in nine months. Sourced Go Desi, Sleepy Owl, and Svami.</p>
         </div>
-        <span class="logo"><img src="rukam-logo.png" alt="Rukam Capital"></span>
-      </a>
+        <a class="logo" href="https://rukamcapital.com/" target="_blank" rel="noopener" aria-label="Rukam Capital website"><img src="rukam-logo.png" alt="Rukam Capital"></a>
+      </div>
     </div>
   </section>
 
