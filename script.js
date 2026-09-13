@@ -24,5 +24,18 @@
   els.forEach(function(e){io.observe(e)});
 })();
 
+/* smooth in-page scrolling that keeps the URL clean (no #hash left behind) */
+(function(){
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href').slice(1);
+      e.preventDefault();
+      if(!id||id==='top'){window.scrollTo({top:0,behavior:'smooth'});}
+      else{var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'});}
+      try{history.replaceState(null,'',location.pathname+location.search);}catch(err){}
+    });
+  });
+})();
+
 /* year in footer */
 (function(){var y=document.getElementById('yr');if(y)y.textContent=new Date().getFullYear();})();
